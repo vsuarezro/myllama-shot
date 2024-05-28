@@ -1,0 +1,8 @@
+! windows environement running WSL2 with Ubunbtu 20
+
+virtualenv venv
+source venv/bin/activate
+pip install huggingface-hub
+pip install -U transformers --upgrade
+pip install accelerate
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
